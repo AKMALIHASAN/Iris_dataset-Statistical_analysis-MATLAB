@@ -1,5 +1,5 @@
-% Iris data set statistic
-% by xudan, 2018.9
+% Iris data set statistical analysis
+% by A K M ALI HASAN
 % attrib1--sepal length in cm
 % attrib2--sepal width in cm
 % attrib3--petal length in cm
@@ -11,6 +11,11 @@ label = zeros(150, 1);
 label(strcmp(class, 'Iris-setosa')) = 1;
 label(strcmp(class, 'Iris-versicolor')) = 2;
 label(strcmp(class, 'Iris-virginica')) = 3;
+
+% %%%%%%%%%--Frequency of species attribute---%%%%%%%%%%
+tabulate(label)
+% %%%%%%%%%--Frequency of species attribute---%%%%%%%%%%
+
 % %%%%%%%%%%%%%%--one-dimensional histogram---%%%%%%%%%%%
 % hist(attrib4,10);
 % xlabel('Petal Width'); 
